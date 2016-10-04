@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/opt/csw/bin/bash -e
 
 die() {
     $ECHO "$@" 1>&2
