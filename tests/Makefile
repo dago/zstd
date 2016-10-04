@@ -151,7 +151,7 @@ clean:
 #----------------------------------------------------------------------------------
 #make valgrindTest is validated only for Linux, OSX, kFreeBSD, Hurd and some BSD targets
 #----------------------------------------------------------------------------------
-ifneq (,$(filter $(shell uname),Linux Darwin GNU/kFreeBSD GNU OpenBSD FreeBSD DragonFly))
+ifneq (,$(filter $(shell uname),Linux Darwin GNU/kFreeBSD GNU OpenBSD FreeBSD DragonFly SunOS))
 HOST_OS = POSIX
 
 valgrindTest: VALGRIND = valgrind --leak-check=full --error-exitcode=1
