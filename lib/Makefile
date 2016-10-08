@@ -21,7 +21,7 @@ VERSION?= $(LIBVER)
 DESTDIR?=
 PREFIX ?= /usr/local
 LIBDIR ?= $(PREFIX)/lib
-INCLUDEDIR=$(PREFIX)/include
+INCLUDEDIR?=$(PREFIX)/include
 
 CPPFLAGS= -I. -I./common
 CFLAGS ?= -O3

@@ -16,8 +16,8 @@
 
 DESTDIR?=
 PREFIX ?= /usr/local
-BINDIR  = $(PREFIX)/bin
-MANDIR  = $(PREFIX)/share/man/man1
+BINDIR ?= $(PREFIX)/bin
+MANDIR ?= $(PREFIX)/share/man/man1
 
 ZSTDDIR = ../lib
 
